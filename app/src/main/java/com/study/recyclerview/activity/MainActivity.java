@@ -30,10 +30,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         recyclerView = findViewById(R.id.recyclerView);
 
-        //RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getApplicationContext());
+        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getApplicationContext());
 //        LinearLayoutManager layoutManager = new LinearLayoutManager(this);
 //        layoutManager.setOrientation(RecyclerView.HORIZONTAL);
-        RecyclerView.LayoutManager layoutManager = new GridLayoutManager(this,2);
+//        RecyclerView.LayoutManager layoutManager = new GridLayoutManager(this,2);
         recyclerView.setLayoutManager(layoutManager);
 
         recyclerView.setHasFixedSize(true);
